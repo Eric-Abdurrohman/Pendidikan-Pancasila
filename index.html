@@ -1,0 +1,4157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Portofolio Guru Eric Abdurrohman - Guru Pendidikan Pancasila SMPN 1 Kwadungan">
+
+    <meta name="author"
+          content="Eric Abdurrohman">
+
+    <title>Eric Abdurrohman | Guru Pendidikan Pancasila</title>
+
+
+    <!-- =====================================================
+         GOOGLE FONT
+    ====================================================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+
+    <!-- =====================================================
+         ICON
+    ====================================================== -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+
+    <style>
+
+        /* ==================================================
+           ROOT VARIABLES
+        ================================================== */
+
+        :root {
+
+            --cream: #F8EEDB;
+            --cream-light: #FFF9EE;
+
+            --terracotta: #D96B45;
+            --terracotta-dark: #A94D31;
+
+            --sage: #687C61;
+            --sage-light: #A9B69A;
+
+            --mustard: #D9A441;
+            --brown: #654A35;
+
+            --dark: #24302A;
+            --white: #FFFFFF;
+
+            --shadow:
+                0 15px 40px rgba(72, 51, 34, 0.12);
+
+            --radius: 24px;
+
+            --transition:
+                all 0.3s ease;
+        }
+
+
+        /* ==================================================
+           RESET
+        ================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+
+            font-family:
+                'DM Sans',
+                sans-serif;
+
+            background:
+                var(--cream);
+
+            color:
+                var(--dark);
+
+            line-height:
+                1.7;
+
+            overflow-x:
+                hidden;
+        }
+
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+
+        ul {
+            list-style: none;
+        }
+
+
+        .container {
+
+            width: min(
+                1180px,
+                90%
+            );
+
+            margin:
+                auto;
+        }
+
+
+        /* ==================================================
+           BACKGROUND GARUDA
+        ================================================== */
+
+        body::before {
+
+            content: "";
+
+            position: fixed;
+
+            inset: 0;
+
+            background-image:
+                url("images/garuda-pancasila.png");
+
+            background-repeat:
+                no-repeat;
+
+            background-position:
+                center;
+
+            background-size:
+                550px;
+
+            opacity:
+                0.035;
+
+            pointer-events:
+                none;
+
+            z-index:
+                -1;
+        }
+
+
+        /* ==================================================
+           DECORATIVE BACKGROUND
+        ================================================== */
+
+        .background-shape {
+
+            position: fixed;
+
+            width: 300px;
+
+            height: 300px;
+
+            border-radius: 50%;
+
+            background:
+                var(--mustard);
+
+            opacity:
+                0.10;
+
+            filter:
+                blur(5px);
+
+            z-index:
+                -2;
+        }
+
+
+        .shape-1 {
+
+            top: 80px;
+
+            left: -150px;
+        }
+
+
+        .shape-2 {
+
+            bottom: 50px;
+
+            right: -150px;
+
+            background:
+                var(--terracotta);
+        }
+
+
+        /* ==================================================
+           NAVBAR
+        ================================================== */
+
+        header {
+
+            position:
+                fixed;
+
+            top: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            z-index: 1000;
+
+            padding:
+                15px 0;
+        }
+
+
+        .navbar {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                space-between;
+
+            background:
+                rgba(255, 249, 238, 0.92);
+
+            backdrop-filter:
+                blur(15px);
+
+            border:
+                1px solid rgba(101, 74, 53, 0.1);
+
+            border-radius:
+                50px;
+
+            padding:
+                12px 20px;
+
+            box-shadow:
+                0 10px 30px rgba(65, 46, 30, 0.08);
+        }
+
+
+        /* LOGO */
+
+        .logo {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            gap:
+                12px;
+        }
+
+
+        .logo-icon {
+
+            width:
+                42px;
+
+            height:
+                42px;
+
+            border-radius:
+                50%;
+
+            background:
+                var(--mustard);
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            color:
+                var(--brown);
+
+            font-size:
+                20px;
+        }
+
+
+        .logo-text {
+
+            line-height:
+                1.2;
+        }
+
+
+        .logo-text strong {
+
+            display:
+                block;
+
+            font-family:
+                'Playfair Display',
+                serif;
+
+            font-size:
+                17px;
+        }
+
+
+        .logo-text span {
+
+            font-size:
+                11px;
+
+            color:
+                var(--sage);
+        }
+
+
+        /* NAVIGATION */
+
+        .nav-links {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            gap:
+                5px;
+        }
+
+
+        .nav-links a {
+
+            padding:
+                9px 12px;
+
+            font-size:
+                13px;
+
+            font-weight:
+                600;
+
+            border-radius:
+                20px;
+
+            transition:
+                var(--transition);
+        }
+
+
+        .nav-links a:hover {
+
+            background:
+                var(--sage);
+
+            color:
+                var(--white);
+        }
+
+
+        .nav-links a.active {
+
+            background:
+                var(--terracotta);
+
+            color:
+                white;
+        }
+
+
+        .menu-btn {
+
+            display:
+                none;
+
+            border:
+                none;
+
+            background:
+                none;
+
+            font-size:
+                22px;
+
+            color:
+                var(--brown);
+
+            cursor:
+                pointer;
+        }
+
+
+        /* ==================================================
+           HERO
+        ================================================== */
+
+        .hero {
+
+            min-height:
+                100vh;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            padding-top:
+                100px;
+
+            position:
+                relative;
+
+            overflow:
+                hidden;
+        }
+
+
+        .hero-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap:
+                60px;
+
+            align-items:
+                center;
+        }
+
+
+        /* HERO TEXT */
+
+        .hero-label {
+
+            display:
+                inline-flex;
+
+            align-items:
+                center;
+
+            gap:
+                8px;
+
+            background:
+                rgba(104, 124, 97, 0.13);
+
+            color:
+                var(--sage);
+
+            padding:
+                7px 14px;
+
+            border-radius:
+                30px;
+
+            font-size:
+                13px;
+
+            font-weight:
+                700;
+
+            margin-bottom:
+                20px;
+        }
+
+
+        .hero-label i {
+
+            font-size:
+                11px;
+        }
+
+
+        .hero h1 {
+
+            font-family:
+                'Playfair Display',
+                serif;
+
+            font-size:
+                clamp(
+                    48px,
+                    6vw,
+                    78px
+                );
+
+            line-height:
+                1.05;
+
+            color:
+                var(--brown);
+
+            margin-bottom:
+                18px;
+        }
+
+
+        .hero h1 span {
+
+            color:
+                var(--terracotta);
+        }
+
+
+        .hero-subtitle {
+
+            font-size:
+                20px;
+
+            font-weight:
+                600;
+
+            color:
+                var(--sage);
+
+            margin-bottom:
+                15px;
+        }
+
+
+        .hero-description {
+
+            max-width:
+                570px;
+
+            color:
+                #685B4D;
+
+            margin-bottom:
+                30px;
+
+            font-size:
+                15px;
+        }
+
+
+        /* HERO BUTTON */
+
+        .hero-buttons {
+
+            display:
+                flex;
+
+            gap:
+                12px;
+
+            flex-wrap:
+                wrap;
+        }
+
+
+        .btn {
+
+            display:
+                inline-flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            gap:
+                9px;
+
+            padding:
+                13px 22px;
+
+            border-radius:
+                30px;
+
+            font-size:
+                14px;
+
+            font-weight:
+                700;
+
+            transition:
+                var(--transition);
+        }
+
+
+        .btn-primary {
+
+            background:
+                var(--terracotta);
+
+            color:
+                white;
+
+            box-shadow:
+                0 8px 20px rgba(217, 107, 69, 0.25);
+        }
+
+
+        .btn-primary:hover {
+
+            background:
+                var(--terracotta-dark);
+
+            transform:
+                translateY(-3px);
+        }
+
+
+        .btn-secondary {
+
+            border:
+                1px solid var(--sage);
+
+            color:
+                var(--sage);
+
+            background:
+                transparent;
+        }
+
+
+        .btn-secondary:hover {
+
+            background:
+                var(--sage);
+
+            color:
+                white;
+        }
+
+
+        /* ==================================================
+           HERO IMAGE
+        ================================================== */
+
+        .hero-visual {
+
+            position:
+                relative;
+
+            display:
+                flex;
+
+            justify-content:
+                center;
+
+            align-items:
+                center;
+        }
+
+
+        .hero-card {
+
+            position:
+                relative;
+
+            width:
+                420px;
+
+            max-width:
+                100%;
+
+            height:
+                500px;
+
+            border-radius:
+                45% 45% 25px 25px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #E7B37C,
+                    #D8A76C
+                );
+
+            overflow:
+                hidden;
+
+            box-shadow:
+                25px 30px 60px rgba(
+                    91,
+                    62,
+                    39,
+                    0.18
+                );
+        }
+
+
+        .hero-card::before {
+
+            content:
+                "";
+
+            position:
+                absolute;
+
+            width:
+                280px;
+
+            height:
+                280px;
+
+            background:
+                var(--cream);
+
+            border-radius:
+                50%;
+
+            top:
+                -100px;
+
+            right:
+                -80px;
+
+            opacity:
+                0.45;
+        }
+
+
+        .hero-card img {
+
+            width:
+                100%;
+
+            height:
+                100%;
+
+            object-fit:
+                cover;
+        }
+
+
+        /* Placeholder foto */
+
+        .photo-placeholder {
+
+            width:
+                100%;
+
+            height:
+                100%;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            flex-direction:
+                column;
+
+            gap:
+                12px;
+
+            color:
+                var(--brown);
+        }
+
+
+        .photo-placeholder i {
+
+            font-size:
+                90px;
+
+            opacity:
+                0.4;
+        }
+
+
+        .photo-placeholder span {
+
+            font-weight:
+                600;
+
+            opacity:
+                0.7;
+        }
+
+
+        /* GARUDA HERO */
+
+        .garuda-watermark {
+
+            position:
+                absolute;
+
+            width:
+                350px;
+
+            height:
+                350px;
+
+            object-fit:
+                contain;
+
+            right:
+                -100px;
+
+            bottom:
+                -60px;
+
+            opacity:
+                0.12;
+
+            filter:
+                sepia(30%);
+        }
+
+
+        /* FLOATING CARD */
+
+        .floating-card {
+
+            position:
+                absolute;
+
+            left:
+                -40px;
+
+            bottom:
+                40px;
+
+            background:
+                rgba(
+                    255,
+                    249,
+                    238,
+                    0.95
+                );
+
+            backdrop-filter:
+                blur(10px);
+
+            padding:
+                17px 20px;
+
+            border-radius:
+                18px;
+
+            box-shadow:
+                var(--shadow);
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            gap:
+                12px;
+        }
+
+
+        .floating-icon {
+
+            width:
+                43px;
+
+            height:
+                43px;
+
+            background:
+                var(--sage);
+
+            color:
+                white;
+
+            border-radius:
+                12px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+        }
+
+
+        .floating-card strong {
+
+            display:
+                block;
+
+            font-size:
+                14px;
+        }
+
+
+        .floating-card span {
+
+            font-size:
+                11px;
+
+            color:
+                #777;
+        }
+
+
+        /* ==================================================
+           SECTION
+        ================================================== */
+
+        section {
+
+            padding:
+                100px 0;
+
+            position:
+                relative;
+        }
+
+
+        .section-heading {
+
+            text-align:
+                center;
+
+            max-width:
+                700px;
+
+            margin:
+                0 auto 50px;
+        }
+
+
+        .section-tag {
+
+            color:
+                var(--terracotta);
+
+            font-weight:
+                700;
+
+            font-size:
+                13px;
+
+            text-transform:
+                uppercase;
+
+            letter-spacing:
+                2px;
+
+            margin-bottom:
+                8px;
+
+            display:
+                block;
+        }
+
+
+        .section-heading h2 {
+
+            font-family:
+                'Playfair Display',
+                serif;
+
+            font-size:
+                clamp(
+                    32px,
+                    4vw,
+                    48px
+                );
+
+            color:
+                var(--brown);
+
+            margin-bottom:
+                12px;
+        }
+
+
+        .section-heading p {
+
+            color:
+                #75685B;
+
+            font-size:
+                15px;
+        }
+
+
+        /* ==================================================
+           PROFILE
+        ================================================== */
+
+        .profile-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                0.8fr 1.2fr;
+
+            gap:
+                70px;
+
+            align-items:
+                center;
+        }
+
+
+        .profile-image {
+
+            position:
+                relative;
+        }
+
+
+        .profile-image-box {
+
+            height:
+                450px;
+
+            border-radius:
+                30px;
+
+            background:
+                var(--sage-light);
+
+            overflow:
+                hidden;
+
+            position:
+                relative;
+        }
+
+
+        .profile-image-box img {
+
+            width:
+                100%;
+
+            height:
+                100%;
+
+            object-fit:
+                cover;
+        }
+
+
+        .profile-image-box .photo-placeholder {
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #BBC5A8,
+                    #889B7A
+                );
+        }
+
+
+        .profile-decoration {
+
+            position:
+                absolute;
+
+            width:
+                110px;
+
+            height:
+                110px;
+
+            border-radius:
+                50%;
+
+            background:
+                var(--mustard);
+
+            bottom:
+                -35px;
+
+            left:
+                -35px;
+
+            z-index:
+                -1;
+        }
+
+
+        .profile-content h3 {
+
+            font-family:
+                'Playfair Display',
+                serif;
+
+            font-size:
+                38px;
+
+            color:
+                var(--brown);
+
+            margin-bottom:
+                10px;
+        }
+
+
+        .profile-content .role {
+
+            color:
+                var(--terracotta);
+
+            font-weight:
+                700;
+
+            margin-bottom:
+                20px;
+        }
+
+
+        .profile-content p {
+
+            color:
+                #6D6257;
+
+            margin-bottom:
+                18px;
+        }
+
+
+        .profile-info {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap:
+                12px;
+
+            margin-top:
+                25px;
+        }
+
+
+        .info-item {
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.45
+                );
+
+            border:
+                1px solid rgba(
+                    101,
+                    74,
+                    53,
+                    0.08
+                );
+
+            padding:
+                14px;
+
+            border-radius:
+                14px;
+        }
+
+
+        .info-item i {
+
+            color:
+                var(--terracotta);
+
+            margin-right:
+                7px;
+        }
+
+
+        .info-item span {
+
+            font-size:
+                13px;
+        }
+
+
+        /* ==================================================
+           CONTENT CARDS
+        ================================================== */
+
+        .cards-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap:
+                22px;
+        }
+
+
+        .card {
+
+            background:
+                rgba(
+                    255,
+                    249,
+                    238,
+                    0.85
+                );
+
+            border:
+                1px solid rgba(
+                    101,
+                    74,
+                    53,
+                    0.08
+                );
+
+            border-radius:
+                var(--radius);
+
+            padding:
+                25px;
+
+            box-shadow:
+                0 8px 25px rgba(
+                    76,
+                    54,
+                    37,
+                    0.05
+                );
+
+            transition:
+                var(--transition);
+        }
+
+
+        .card:hover {
+
+            transform:
+                translateY(-7px);
+
+            box-shadow:
+                var(--shadow);
+        }
+
+
+        .card-icon {
+
+            width:
+                55px;
+
+            height:
+                55px;
+
+            border-radius:
+                16px;
+
+            background:
+                #E6D8BB;
+
+            color:
+                var(--terracotta);
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            font-size:
+                22px;
+
+            margin-bottom:
+                18px;
+        }
+
+
+        .card h3 {
+
+            font-family:
+                'Playfair Display',
+                serif;
+
+            font-size:
+                23px;
+
+            color:
+                var(--brown);
+
+            margin-bottom:
+                8px;
+        }
+
+
+        .card p {
+
+            color:
+                #75685B;
+
+            font-size:
+                14px;
+
+            margin-bottom:
+                15px;
+        }
+
+
+        .read-more {
+
+            color:
+                var(--terracotta);
+
+            font-size:
+                13px;
+
+            font-weight:
+                700;
+
+            display:
+                inline-flex;
+
+            align-items:
+                center;
+
+            gap:
+                6px;
+        }
+
+
+        /* ==================================================
+           EXPERIENCE
+        ================================================== */
+
+        .timeline {
+
+            position:
+                relative;
+
+            max-width:
+                850px;
+
+            margin:
+                auto;
+        }
+
+
+        .timeline::before {
+
+            content:
+                "";
+
+            position:
+                absolute;
+
+            left:
+                50%;
+
+            top:
+                0;
+
+            bottom:
+                0;
+
+            width:
+                2px;
+
+            background:
+                var(--sage-light);
+
+            transform:
+                translateX(-50%);
+        }
+
+
+        .timeline-item {
+
+            display:
+                flex;
+
+            justify-content:
+                space-between;
+
+            align-items:
+                center;
+
+            margin-bottom:
+                40px;
+
+            position:
+                relative;
+        }
+
+
+        .timeline-content {
+
+            width:
+                44%;
+
+            background:
+                rgba(
+                    255,
+                    249,
+                    238,
+                    0.85
+                );
+
+            padding:
+                22px;
+
+            border-radius:
+                20px;
+
+            box-shadow:
+                0 8px 25px rgba(
+                    76,
+                    54,
+                    37,
+                    0.06
+                );
+        }
+
+
+        .timeline-item:nth-child(even)
+        .timeline-content {
+
+            order:
+                3;
+        }
+
+
+        .timeline-dot {
+
+            position:
+                absolute;
+
+            left:
+                50%;
+
+            transform:
+                translateX(-50%);
+
+            width:
+                18px;
+
+            height:
+                18px;
+
+            border-radius:
+                50%;
+
+            background:
+                var(--terracotta);
+
+            border:
+                4px solid var(--cream);
+        }
+
+
+        .timeline-year {
+
+            width:
+                44%;
+
+            color:
+                var(--sage);
+
+            font-weight:
+                700;
+
+            font-size:
+                14px;
+        }
+
+
+        .timeline-item:nth-child(even)
+        .timeline-year {
+
+            order:
+                1;
+
+            text-align:
+                right;
+        }
+
+
+        .timeline-content h3 {
+
+            font-family:
+                'Playfair Display',
+                serif;
+
+            color:
+                var(--brown);
+
+            margin-bottom:
+                5px;
+        }
+
+
+        .timeline-content p {
+
+            font-size:
+                13px;
+
+            color:
+                #75685B;
+        }
+
+
+        /* ==================================================
+           PORTFOLIO / KARYA
+        ================================================== */
+
+        .portfolio-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap:
+                22px;
+        }
+
+
+        .portfolio-card {
+
+            background:
+                var(--cream-light);
+
+            border-radius:
+                22px;
+
+            overflow:
+                hidden;
+
+            box-shadow:
+                0 8px 25px rgba(
+                    76,
+                    54,
+                    37,
+                    0.06
+                );
+
+            transition:
+                var(--transition);
+        }
+
+
+        .portfolio-card:hover {
+
+            transform:
+                translateY(-6px);
+        }
+
+
+        .portfolio-image {
+
+            height:
+                210px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #DCA77D,
+                    #AAB497
+                );
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            color:
+                white;
+
+            font-size:
+                50px;
+        }
+
+
+        .portfolio-body {
+
+            padding:
+                22px;
+        }
+
+
+        .portfolio-body h3 {
+
+            font-family:
+                'Playfair Display',
+                serif;
+
+            color:
+                var(--brown);
+
+            margin-bottom:
+                7px;
+        }
+
+
+        .portfolio-body p {
+
+            font-size:
+                13px;
+
+            color:
+                #75685B;
+        }
+
+
+        .tag {
+
+            display:
+                inline-block;
+
+            padding:
+                5px 10px;
+
+            border-radius:
+                20px;
+
+            background:
+                #E9D9B9;
+
+            color:
+                var(--brown);
+
+            font-size:
+                11px;
+
+            font-weight:
+                700;
+
+            margin-bottom:
+                10px;
+        }
+
+
+        /* ==================================================
+           MEDIA PEMBELAJARAN
+        ================================================== */
+
+        .media-section {
+
+            background:
+                var(--sage);
+
+            color:
+                white;
+        }
+
+
+        .media-section .section-heading h2 {
+
+            color:
+                white;
+        }
+
+
+        .media-section .section-heading p {
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.75
+                );
+        }
+
+
+        .media-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap:
+                18px;
+        }
+
+
+        .media-card {
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.12
+                );
+
+            border:
+                1px solid rgba(
+                    255,
+                    255,
+                    255,
+                    0.15
+                );
+
+            padding:
+                25px 20px;
+
+            border-radius:
+                20px;
+
+            transition:
+                var(--transition);
+        }
+
+
+        .media-card:hover {
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.2
+                );
+
+            transform:
+                translateY(-5px);
+        }
+
+
+        .media-card i {
+
+            font-size:
+                30px;
+
+            margin-bottom:
+                15px;
+
+            color:
+                #F5D58A;
+        }
+
+
+        .media-card h3 {
+
+            margin-bottom:
+                6px;
+
+            font-size:
+                17px;
+        }
+
+
+        .media-card p {
+
+            font-size:
+                12px;
+
+            opacity:
+                0.75;
+        }
+
+
+        /* ==================================================
+           CONTACT
+        ================================================== */
+
+        .contact-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                0.8fr 1.2fr;
+
+            gap:
+                50px;
+        }
+
+
+        .contact-info h3 {
+
+            font-family:
+                'Playfair Display',
+                serif;
+
+            font-size:
+                34px;
+
+            color:
+                var(--brown);
+
+            margin-bottom:
+                15px;
+        }
+
+
+        .contact-info > p {
+
+            color:
+                #75685B;
+
+            margin-bottom:
+                30px;
+        }
+
+
+        .contact-item {
+
+            display:
+                flex;
+
+            gap:
+                15px;
+
+            margin-bottom:
+                20px;
+
+            align-items:
+                flex-start;
+        }
+
+
+        .contact-item-icon {
+
+            min-width:
+                45px;
+
+            height:
+                45px;
+
+            border-radius:
+                13px;
+
+            background:
+                #E7D9BC;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            color:
+                var(--terracotta);
+        }
+
+
+        .contact-item strong {
+
+            display:
+                block;
+
+            color:
+                var(--brown);
+
+            font-size:
+                14px;
+        }
+
+
+        .contact-item span {
+
+            font-size:
+                13px;
+
+            color:
+                #75685B;
+        }
+
+
+        /* CONTACT FORM */
+
+        .contact-form {
+
+            background:
+                rgba(
+                    255,
+                    249,
+                    238,
+                    0.8
+                );
+
+            padding:
+                30px;
+
+            border-radius:
+                25px;
+
+            box-shadow:
+                var(--shadow);
+        }
+
+
+        .form-group {
+
+            margin-bottom:
+                17px;
+        }
+
+
+        .form-group label {
+
+            display:
+                block;
+
+            margin-bottom:
+                6px;
+
+            font-size:
+                13px;
+
+            font-weight:
+                700;
+
+            color:
+                var(--brown);
+        }
+
+
+        .form-group input,
+        .form-group textarea {
+
+            width:
+                100%;
+
+            border:
+                1px solid #DDCEB4;
+
+            background:
+                #FFFDF7;
+
+            padding:
+                12px 14px;
+
+            border-radius:
+                12px;
+
+            outline:
+                none;
+
+            font-family:
+                inherit;
+
+            font-size:
+                13px;
+
+            transition:
+                var(--transition);
+        }
+
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+
+            border-color:
+                var(--terracotta);
+
+            box-shadow:
+                0 0 0 3px rgba(
+                    217,
+                    107,
+                    69,
+                    0.08
+                );
+        }
+
+
+        .form-group textarea {
+
+            min-height:
+                130px;
+
+            resize:
+                vertical;
+        }
+
+
+        /* ==================================================
+           FOOTER
+        ================================================== */
+
+        footer {
+
+            background:
+                var(--brown);
+
+            color:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.8
+                );
+
+            padding:
+                35px 0;
+        }
+
+
+        .footer-content {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                space-between;
+
+            gap:
+                20px;
+        }
+
+
+        .footer-logo {
+
+            font-family:
+                'Playfair Display',
+                serif;
+
+            font-size:
+                20px;
+
+            color:
+                white;
+        }
+
+
+        .social-links {
+
+            display:
+                flex;
+
+            gap:
+                10px;
+        }
+
+
+        .social-links a {
+
+            width:
+                38px;
+
+            height:
+                38px;
+
+            border:
+                1px solid rgba(
+                    255,
+                    255,
+                    255,
+                    0.2
+                );
+
+            border-radius:
+                50%;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            transition:
+                var(--transition);
+        }
+
+
+        .social-links a:hover {
+
+            background:
+                var(--terracotta);
+
+            border-color:
+                var(--terracotta);
+
+            color:
+                white;
+        }
+
+
+        .copyright {
+
+            font-size:
+                11px;
+
+            margin-top:
+                15px;
+
+            opacity:
+                0.6;
+        }
+
+
+        /* ==================================================
+           SCROLL TOP
+        ================================================== */
+
+        .scroll-top {
+
+            position:
+                fixed;
+
+            right:
+                25px;
+
+            bottom:
+                25px;
+
+            width:
+                45px;
+
+            height:
+                45px;
+
+            border:
+                none;
+
+            border-radius:
+                50%;
+
+            background:
+                var(--terracotta);
+
+            color:
+                white;
+
+            cursor:
+                pointer;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            opacity:
+                0;
+
+            visibility:
+                hidden;
+
+            transition:
+                var(--transition);
+
+            z-index:
+                999;
+        }
+
+
+        .scroll-top.show {
+
+            opacity:
+                1;
+
+            visibility:
+                visible;
+        }
+
+
+        /* ==================================================
+           ANIMATION
+        ================================================== */
+
+        .fade-up {
+
+            opacity:
+                0;
+
+            transform:
+                translateY(30px);
+
+            transition:
+                0.7s ease;
+        }
+
+
+        .fade-up.visible {
+
+            opacity:
+                1;
+
+            transform:
+                translateY(0);
+        }
+
+
+        /* ==================================================
+           RESPONSIVE TABLET
+        ================================================== */
+
+        @media (max-width: 1000px) {
+
+            .nav-links {
+
+                gap:
+                    0;
+            }
+
+
+            .nav-links a {
+
+                padding:
+                    8px;
+
+                font-size:
+                    11px;
+            }
+
+
+            .hero-grid {
+
+                gap:
+                    35px;
+            }
+
+
+            .cards-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+
+            .portfolio-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+
+            .media-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+        }
+
+
+        /* ==================================================
+           RESPONSIVE MOBILE
+        ================================================== */
+
+        @media (max-width: 768px) {
+
+            .container {
+
+                width:
+                    90%;
+            }
+
+
+            header {
+
+                padding:
+                    10px 0;
+            }
+
+
+            .navbar {
+
+                border-radius:
+                    20px;
+
+                padding:
+                    10px 15px;
+            }
+
+
+            .menu-btn {
+
+                display:
+                    block;
+            }
+
+
+            .nav-links {
+
+                position:
+                    absolute;
+
+                top:
+                    70px;
+
+                left:
+                    0;
+
+                width:
+                    100%;
+
+                background:
+                    rgba(
+                        255,
+                        249,
+                        238,
+                        0.98
+                    );
+
+                backdrop-filter:
+                    blur(20px);
+
+                border-radius:
+                    20px;
+
+                padding:
+                    12px;
+
+                flex-direction:
+                    column;
+
+                align-items:
+                    stretch;
+
+                box-shadow:
+                    var(--shadow);
+
+                opacity:
+                    0;
+
+                visibility:
+                    hidden;
+
+                transform:
+                    translateY(-10px);
+
+                transition:
+                    var(--transition);
+            }
+
+
+            .nav-links.active {
+
+                opacity:
+                    1;
+
+                visibility:
+                    visible;
+
+                transform:
+                    translateY(0);
+            }
+
+
+            .nav-links a {
+
+                padding:
+                    12px;
+
+                text-align:
+                    center;
+
+                font-size:
+                    14px;
+            }
+
+
+            .hero {
+
+                padding-top:
+                    110px;
+
+                padding-bottom:
+                    60px;
+            }
+
+
+            .hero-grid {
+
+                grid-template-columns:
+                    1fr;
+
+                text-align:
+                    center;
+            }
+
+
+            .hero-description {
+
+                margin-left:
+                    auto;
+
+                margin-right:
+                    auto;
+            }
+
+
+            .hero-buttons {
+
+                justify-content:
+                    center;
+            }
+
+
+            .hero-card {
+
+                width:
+                    330px;
+
+                height:
+                    410px;
+            }
+
+
+            .floating-card {
+
+                left:
+                    0;
+
+                bottom:
+                    20px;
+            }
+
+
+            section {
+
+                padding:
+                    70px 0;
+            }
+
+
+            .profile-grid {
+
+                grid-template-columns:
+                    1fr;
+
+                gap:
+                    40px;
+            }
+
+
+            .profile-image-box {
+
+                height:
+                    380px;
+            }
+
+
+            .cards-grid,
+            .portfolio-grid {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            .media-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+
+            .timeline::before {
+
+                left:
+                    10px;
+            }
+
+
+            .timeline-item {
+
+                display:
+                    block;
+
+                padding-left:
+                    35px;
+            }
+
+
+            .timeline-content {
+
+                width:
+                    100%;
+
+                order:
+                    unset !important;
+            }
+
+
+            .timeline-year {
+
+                width:
+                    100%;
+
+                margin-bottom:
+                    10px;
+
+                text-align:
+                    left !important;
+
+                order:
+                    unset !important;
+            }
+
+
+            .timeline-dot {
+
+                left:
+                    10px;
+            }
+
+
+            .contact-grid {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            .footer-content {
+
+                flex-direction:
+                    column;
+
+                text-align:
+                    center;
+            }
+        }
+
+
+        /* ==================================================
+           SMALL MOBILE
+        ================================================== */
+
+        @media (max-width: 450px) {
+
+            .hero h1 {
+
+                font-size:
+                    44px;
+            }
+
+
+            .hero-subtitle {
+
+                font-size:
+                    17px;
+            }
+
+
+            .hero-card {
+
+                width:
+                    280px;
+
+                height:
+                    350px;
+            }
+
+
+            .profile-info {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            .media-grid {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            .floating-card {
+
+                transform:
+                    scale(0.9);
+
+                transform-origin:
+                    bottom left;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         DECORATIVE SHAPES
+    ====================================================== -->
+
+    <div class="background-shape shape-1"></div>
+    <div class="background-shape shape-2"></div>
+
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header>
+
+        <div class="container">
+
+            <nav class="navbar">
+
+
+                <!-- LOGO -->
+
+                <a href="#beranda" class="logo">
+
+                    <div class="logo-icon">
+
+                        <i class="fa-solid fa-landmark"></i>
+
+                    </div>
+
+                    <div class="logo-text">
+
+                        <strong>
+                            PORTOFOLIO GURU
+                        </strong>
+
+                        <span>
+                            Pendidikan Pancasila
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- NAVIGATION -->
+
+                <div class="nav-links" id="navLinks">
+
+                    <a href="#beranda" class="active">
+                        Beranda
+                    </a>
+
+                    <a href="#profil">
+                        Profil
+                    </a>
+
+                    <a href="#konten">
+                        Konten Edukasi
+                    </a>
+
+                    <a href="#pengalaman">
+                        Pengalaman
+                    </a>
+
+                    <a href="#karya">
+                        Prestasi/Karya
+                    </a>
+
+                    <a href="#media">
+                        Media Pembelajaran
+                    </a>
+
+                    <a href="#kontak">
+                        Kontak
+                    </a>
+
+                </div>
+
+
+                <!-- MOBILE MENU -->
+
+                <button
+                    class="menu-btn"
+                    id="menuBtn">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <main>
+
+        <section
+            class="hero"
+            id="beranda">
+
+            <div class="container">
+
+                <div class="hero-grid">
+
+
+                    <!-- HERO TEXT -->
+
+                    <div class="hero-content fade-up">
+
+                        <div class="hero-label">
+
+                            <i class="fa-solid fa-sun"></i>
+
+                            PORTOFOLIO PENDIDIK
+
+                        </div>
+
+
+                        <h1>
+
+                            Eric
+                            <span>
+                                Abdurrohman
+                            </span>
+
+                        </h1>
+
+
+                        <div class="hero-subtitle">
+
+                            Guru Pendidikan Pancasila
+
+                        </div>
+
+
+                        <p class="hero-description">
+
+                            Menanamkan nilai,
+                            membangun karakter,
+                            dan menghadirkan pembelajaran
+                            Pendidikan Pancasila yang
+                            bermakna, kontekstual,
+                            dan menyenangkan.
+
+                        </p>
+
+
+                        <div class="hero-buttons">
+
+                            <a
+                                href="#karya"
+                                class="btn btn-primary">
+
+                                Jelajahi Portofolio
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+
+                            <a
+                                href="#profil"
+                                class="btn btn-secondary">
+
+                                Tentang Saya
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- HERO VISUAL -->
+
+                    <div class="hero-visual fade-up">
+
+
+                        <div class="hero-card">
+
+
+                            <!--
+                            ==================================================
+                            FOTO GURU
+
+                            Masukkan foto di:
+                            images/eric.jpg
+
+                            Kemudian hapus photo-placeholder
+                            dan aktifkan tag img di bawah.
+                            ==================================================
+                            -->
+
+
+                            <img
+                                src="images/eric.jpg"
+                                alt="Eric Abdurrohman"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
+
+                            <div
+                                class="photo-placeholder"
+                                style="display:none;">
+
+                                <i class="fa-solid fa-user"></i>
+
+                                <span>
+                                    Foto Guru
+                                </span>
+
+                            </div>
+
+
+                            <!-- GARUDA -->
+
+                            <img
+                                src="images/garuda-pancasila.png"
+                                class="garuda-watermark"
+                                alt="Garuda Pancasila">
+
+                        </div>
+
+
+
+                        <!-- FLOATING INFO -->
+
+                        <div class="floating-card">
+
+                            <div class="floating-icon">
+
+                                <i class="fa-solid fa-school"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    SMPN 1 Kwadungan
+                                </strong>
+
+                                <span>
+                                    Ngawi, Jawa Timur
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             PROFILE
+        ====================================================== -->
+
+        <section id="profil">
+
+            <div class="container">
+
+                <div class="section-heading fade-up">
+
+                    <span class="section-tag">
+                        Profil Guru
+                    </span>
+
+                    <h2>
+                        Mendidik dengan Nilai,
+                        Menginspirasi dengan Keteladanan
+                    </h2>
+
+                    <p>
+                        Ruang digital untuk mengenal
+                        perjalanan, gagasan, dan karya
+                        dalam pendidikan Pendidikan Pancasila.
+                    </p>
+
+                </div>
+
+
+
+                <div class="profile-grid">
+
+
+                    <div class="profile-image fade-up">
+
+                        <div class="profile-image-box">
+
+                            <img
+                                src="images/eric.jpg"
+                                alt="Eric Abdurrohman"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
+                            <div
+                                class="photo-placeholder"
+                                style="display:none;">
+
+                                <i class="fa-solid fa-user-tie"></i>
+
+                                <span>
+                                    Foto Profil
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="profile-decoration"></div>
+
+                    </div>
+
+
+
+                    <div class="profile-content fade-up">
+
+                        <h3>
+                            Eric Abdurrohman
+                        </h3>
+
+                        <div class="role">
+                            Guru Pendidikan Pancasila
+                        </div>
+
+                        <p>
+                            Selamat datang di portofolio saya.
+                            Website ini menjadi ruang untuk
+                            berbagi pengalaman, konten edukasi,
+                            media pembelajaran, dan karya
+                            dalam mendukung pembelajaran
+                            Pendidikan Pancasila.
+                        </p>
+
+                        <p>
+                            Saya percaya bahwa pembelajaran
+                            Pancasila tidak hanya tentang
+                            memahami konsep, tetapi juga
+                            tentang bagaimana peserta didik
+                            menghayati nilai dan menerapkannya
+                            dalam kehidupan sehari-hari.
+                        </p>
+
+
+                        <div class="profile-info">
+
+                            <div class="info-item">
+
+                                <i class="fa-solid fa-user"></i>
+
+                                <span>
+                                    Eric Abdurrohman
+                                </span>
+
+                            </div>
+
+
+                            <div class="info-item">
+
+                                <i class="fa-solid fa-book"></i>
+
+                                <span>
+                                    Pendidikan Pancasila
+                                </span>
+
+                            </div>
+
+
+                            <div class="info-item">
+
+                                <i class="fa-solid fa-school"></i>
+
+                                <span>
+                                    SMPN 1 Kwadungan
+                                </span>
+
+                            </div>
+
+
+                            <div class="info-item">
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                                <span>
+                                    Ngawi
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             KONTEN EDUKASI
+        ====================================================== -->
+
+        <section id="konten">
+
+            <div class="container">
+
+                <div class="section-heading fade-up">
+
+                    <span class="section-tag">
+                        Konten Edukasi
+                    </span>
+
+                    <h2>
+                        Belajar Pancasila
+                        dengan Cara yang Bermakna
+                    </h2>
+
+                    <p>
+                        Materi dan gagasan pembelajaran
+                        yang dapat digunakan untuk
+                        mendukung kegiatan belajar peserta didik.
+                    </p>
+
+                </div>
+
+
+                <div class="cards-grid">
+
+
+                    <article class="card fade-up">
+
+                        <div class="card-icon">
+
+                            <i class="fa-solid fa-scale-balanced"></i>
+
+                        </div>
+
+                        <h3>
+                            Norma Masyarakat
+                        </h3>
+
+                        <p>
+                            Memahami berbagai jenis norma
+                            serta penerapannya dalam
+                            kehidupan bermasyarakat.
+                        </p>
+
+                        <a href="#" class="read-more">
+                            Baca Materi
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+
+
+                    <article class="card fade-up">
+
+                        <div class="card-icon">
+
+                            <i class="fa-solid fa-landmark"></i>
+
+                        </div>
+
+                        <h3>
+                            Sejarah Pancasila
+                        </h3>
+
+                        <p>
+                            Mengenal proses perumusan dan
+                            penetapan Pancasila sebagai
+                            dasar negara Indonesia.
+                        </p>
+
+                        <a href="#" class="read-more">
+                            Baca Materi
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+
+
+                    <article class="card fade-up">
+
+                        <div class="card-icon">
+
+                            <i class="fa-solid fa-people-group"></i>
+
+                        </div>
+
+                        <h3>
+                            Bhinneka Tunggal Ika
+                        </h3>
+
+                        <p>
+                            Mengembangkan sikap menghargai
+                            keberagaman untuk memperkuat
+                            persatuan Indonesia.
+                        </p>
+
+                        <a href="#" class="read-more">
+                            Baca Materi
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+
+
+                    <article class="card fade-up">
+
+                        <div class="card-icon">
+
+                            <i class="fa-solid fa-book-open"></i>
+
+                        </div>
+
+                        <h3>
+                            UUD NRI 1945
+                        </h3>
+
+                        <p>
+                            Memahami hubungan Pancasila
+                            dengan UUD NRI Tahun 1945.
+                        </p>
+
+                        <a href="#" class="read-more">
+                            Baca Materi
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+
+
+                    <article class="card fade-up">
+
+                        <div class="card-icon">
+
+                            <i class="fa-solid fa-flag"></i>
+
+                        </div>
+
+                        <h3>
+                            NKRI
+                        </h3>
+
+                        <p>
+                            Memahami pentingnya persatuan
+                            dan keutuhan Negara Kesatuan
+                            Republik Indonesia.
+                        </p>
+
+                        <a href="#" class="read-more">
+                            Baca Materi
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+
+
+                    <article class="card fade-up">
+
+                        <div class="card-icon">
+
+                            <i class="fa-solid fa-comments"></i>
+
+                        </div>
+
+                        <h3>
+                            Musyawarah
+                        </h3>
+
+                        <p>
+                            Belajar menghargai perbedaan
+                            pendapat dan mengambil keputusan
+                            melalui musyawarah.
+                        </p>
+
+                        <a href="#" class="read-more">
+                            Baca Materi
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             PENGALAMAN
+        ====================================================== -->
+
+        <section id="pengalaman">
+
+            <div class="container">
+
+                <div class="section-heading fade-up">
+
+                    <span class="section-tag">
+                        Pengalaman
+                    </span>
+
+                    <h2>
+                        Perjalanan dalam Pendidikan
+                    </h2>
+
+                    <p>
+                        Pengalaman pembelajaran dan
+                        pengembangan profesional sebagai pendidik.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline">
+
+
+                    <div class="timeline-item fade-up">
+
+                        <div class="timeline-year">
+                            2024 – Sekarang
+                        </div>
+
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Guru Pendidikan Pancasila
+                            </h3>
+
+                            <p>
+                                SMPN 1 Kwadungan,
+                                Kabupaten Ngawi.
+                            </p>
+
+                        </div>
+
+
+                        <div class="timeline-dot"></div>
+
+                    </div>
+
+
+
+                    <div class="timeline-item fade-up">
+
+                        <div class="timeline-year">
+                            Pengembangan Profesional
+                        </div>
+
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Pembelajaran Mendalam
+                            </h3>
+
+                            <p>
+                                Pengembangan perangkat
+                                pembelajaran yang berorientasi
+                                pada pengalaman belajar peserta didik.
+                            </p>
+
+                        </div>
+
+
+                        <div class="timeline-dot"></div>
+
+                    </div>
+
+
+
+                    <div class="timeline-item fade-up">
+
+                        <div class="timeline-year">
+                            Pengembangan Media
+                        </div>
+
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Media Pembelajaran Digital
+                            </h3>
+
+                            <p>
+                                Mengembangkan media pembelajaran
+                                visual, digital, dan interaktif
+                                untuk Pendidikan Pancasila.
+                            </p>
+
+                        </div>
+
+
+                        <div class="timeline-dot"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             PRESTASI / KARYA
+        ====================================================== -->
+
+        <section id="karya">
+
+            <div class="container">
+
+                <div class="section-heading fade-up">
+
+                    <span class="section-tag">
+                        Prestasi & Karya
+                    </span>
+
+                    <h2>
+                        Karya untuk Pembelajaran
+                    </h2>
+
+                    <p>
+                        Dokumentasi karya, perangkat,
+                        dan inovasi pembelajaran.
+                    </p>
+
+                </div>
+
+
+                <div class="portfolio-grid">
+
+
+                    <article class="portfolio-card fade-up">
+
+                        <div class="portfolio-image">
+
+                            <i class="fa-solid fa-file-lines"></i>
+
+                        </div>
+
+                        <div class="portfolio-body">
+
+                            <span class="tag">
+                                Perangkat Pembelajaran
+                            </span>
+
+                            <h3>
+                                RPP Pembelajaran Mendalam
+                            </h3>
+
+                            <p>
+                                Perencanaan pembelajaran
+                                Pendidikan Pancasila berbasis
+                                Pembelajaran Mendalam dan PBL.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="portfolio-card fade-up">
+
+                        <div class="portfolio-image">
+
+                            <i class="fa-solid fa-palette"></i>
+
+                        </div>
+
+                        <div class="portfolio-body">
+
+                            <span class="tag">
+                                Media Visual
+                            </span>
+
+                            <h3>
+                                Infografis Pancasila
+                            </h3>
+
+                            <p>
+                                Media visual untuk membantu
+                                peserta didik memahami konsep
+                                Pendidikan Pancasila.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="portfolio-card fade-up">
+
+                        <div class="portfolio-image">
+
+                            <i class="fa-solid fa-laptop"></i>
+
+                        </div>
+
+                        <div class="portfolio-body">
+
+                            <span class="tag">
+                                Digital Learning
+                            </span>
+
+                            <h3>
+                                Media Pembelajaran Digital
+                            </h3>
+
+                            <p>
+                                Pengembangan pembelajaran
+                                berbasis teknologi dan
+                                sumber digital.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             MEDIA PEMBELAJARAN
+        ====================================================== -->
+
+        <section
+            id="media"
+            class="media-section">
+
+            <div class="container">
+
+                <div class="section-heading fade-up">
+
+                    <span class="section-tag"
+                          style="color:#F5D58A;">
+
+                        Media Pembelajaran
+
+                    </span>
+
+                    <h2>
+                        Belajar Lebih Interaktif
+                    </h2>
+
+                    <p>
+                        Kumpulan media yang dapat digunakan
+                        untuk mendukung pengalaman belajar
+                        Pendidikan Pancasila.
+                    </p>
+
+                </div>
+
+
+                <div class="media-grid">
+
+
+                    <div class="media-card fade-up">
+
+                        <i class="fa-solid fa-video"></i>
+
+                        <h3>
+                            Video Pembelajaran
+                        </h3>
+
+                        <p>
+                            Video edukasi untuk memperkuat
+                            pemahaman konsep.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="media-card fade-up">
+
+                        <i class="fa-solid fa-images"></i>
+
+                        <h3>
+                            Infografis
+                        </h3>
+
+                        <p>
+                            Visualisasi materi yang
+                            ringkas dan mudah dipahami.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="media-card fade-up">
+
+                        <i class="fa-solid fa-gamepad"></i>
+
+                        <h3>
+                            Game Edukasi
+                        </h3>
+
+                        <p>
+                            Aktivitas interaktif untuk
+                            meningkatkan keterlibatan siswa.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="media-card fade-up">
+
+                        <i class="fa-solid fa-file-pdf"></i>
+
+                        <h3>
+                            Modul & LKPD
+                        </h3>
+
+                        <p>
+                            Bahan ajar dan lembar kerja
+                            untuk pembelajaran mandiri.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CONTACT
+        ====================================================== -->
+
+        <section id="kontak">
+
+            <div class="container">
+
+                <div class="section-heading fade-up">
+
+                    <span class="section-tag">
+                        Kontak
+                    </span>
+
+                    <h2>
+                        Mari Terhubung
+                    </h2>
+
+                    <p>
+                        Terbuka untuk berbagi gagasan,
+                        kolaborasi pendidikan, dan
+                        pengembangan media pembelajaran.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-grid">
+
+
+                    <!-- CONTACT INFO -->
+
+                    <div class="contact-info fade-up">
+
+                        <h3>
+                            Let's Connect
+                        </h3>
+
+                        <p>
+                            Silakan hubungi saya untuk
+                            kolaborasi, diskusi pendidikan,
+                            maupun berbagi sumber belajar.
+                        </p>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-item-icon">
+
+                                <i class="fa-solid fa-school"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Sekolah
+                                </strong>
+
+                                <span>
+                                    SMPN 1 Kwadungan
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-item-icon">
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Lokasi
+                                </strong>
+
+                                <span>
+                                    Kabupaten Ngawi,
+                                    Jawa Timur
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <div class="contact-item-icon">
+
+                                <i class="fa-solid fa-book"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Mata Pelajaran
+                                </strong>
+
+                                <span>
+                                    Pendidikan Pancasila
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CONTACT FORM -->
+
+                    <form
+                        class="contact-form fade-up"
+                        onsubmit="sendMessage(event)">
+
+                        <div class="form-group">
+
+                            <label>
+                                Nama
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Nama Anda"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="nama@email.com"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>
+                                Pesan
+                            </label>
+
+                            <textarea
+                                id="message"
+                                placeholder="Tuliskan pesan Anda..."
+                                required></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary">
+
+                            Kirim Pesan
+
+                            <i class="fa-solid fa-paper-plane"></i>
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div>
+
+                    <div class="footer-logo">
+                        Eric Abdurrohman
+                    </div>
+
+                    <div class="copyright">
+                        Guru Pendidikan Pancasila
+                        • SMPN 1 Kwadungan
+                        • Ngawi
+                    </div>
+
+                </div>
+
+
+                <div class="social-links">
+
+                    <a href="#"
+                       aria-label="Instagram">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+
+                    <a href="#"
+                       aria-label="YouTube">
+
+                        <i class="fa-brands fa-youtube"></i>
+
+                    </a>
+
+
+                    <a href="#"
+                       aria-label="Facebook">
+
+                        <i class="fa-brands fa-facebook"></i>
+
+                    </a>
+
+
+                    <a href="#"
+                       aria-label="WhatsApp">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         SCROLL TOP BUTTON
+    ====================================================== -->
+
+    <button
+        class="scroll-top"
+        id="scrollTop">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+        /* ==================================================
+           MOBILE MENU
+        ================================================== */
+
+        const menuBtn =
+            document.getElementById("menuBtn");
+
+        const navLinks =
+            document.getElementById("navLinks");
+
+
+        menuBtn.addEventListener(
+            "click",
+            () => {
+
+                navLinks.classList.toggle(
+                    "active"
+                );
+
+            }
+        );
+
+
+        /* ==================================================
+           CLOSE MOBILE MENU
+        ================================================== */
+
+        document
+            .querySelectorAll(".nav-links a")
+            .forEach(link => {
+
+                link.addEventListener(
+                    "click",
+                    () => {
+
+                        navLinks.classList.remove(
+                            "active"
+                        );
+
+                    }
+                );
+
+            });
+
+
+
+        /* ==================================================
+           ACTIVE NAVIGATION
+        ================================================== */
+
+        const sections =
+            document.querySelectorAll("section");
+
+        const links =
+            document.querySelectorAll(
+                ".nav-links a"
+            );
+
+
+        window.addEventListener(
+            "scroll",
+            () => {
+
+                let current = "";
+
+                sections.forEach(
+                    section => {
+
+                        const sectionTop =
+                            section.offsetTop - 150;
+
+                        if (
+                            window.scrollY >=
+                            sectionTop
+                        ) {
+
+                            current =
+                                section.getAttribute(
+                                    "id"
+                                );
+
+                        }
+
+                    }
+                );
+
+
+                links.forEach(
+                    link => {
+
+                        link.classList.remove(
+                            "active"
+                        );
+
+                        if (
+                            link.getAttribute(
+                                "href"
+                            ) ===
+                            "#" + current
+                        ) {
+
+                            link.classList.add(
+                                "active"
+                            );
+
+                        }
+
+                    }
+                );
+
+            }
+        );
+
+
+
+        /* ==================================================
+           SCROLL REVEAL
+        ================================================== */
+
+        const observer =
+            new IntersectionObserver(
+                entries => {
+
+                    entries.forEach(
+                        entry => {
+
+                            if (
+                                entry.isIntersecting
+                            ) {
+
+                                entry.target
+                                    .classList
+                                    .add(
+                                        "visible"
+                                    );
+
+                            }
+
+                        }
+                    );
+
+                },
+                {
+                    threshold: 0.12
+                }
+            );
+
+
+        document
+            .querySelectorAll(".fade-up")
+            .forEach(
+                element => {
+
+                    observer.observe(
+                        element
+                    );
+
+                }
+            );
+
+
+
+        /* ==================================================
+           SCROLL TOP
+        ================================================== */
+
+        const scrollTop =
+            document.getElementById(
+                "scrollTop"
+            );
+
+
+        window.addEventListener(
+            "scroll",
+            () => {
+
+                if (
+                    window.scrollY > 500
+                ) {
+
+                    scrollTop.classList.add(
+                        "show"
+                    );
+
+                } else {
+
+                    scrollTop.classList.remove(
+                        "show"
+                    );
+
+                }
+
+            }
+        );
+
+
+        scrollTop.addEventListener(
+            "click",
+            () => {
+
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+
+            }
+        );
+
+
+
+        /* ==================================================
+           CONTACT FORM
+        ================================================== */
+
+        function sendMessage(event) {
+
+            event.preventDefault();
+
+
+            const name =
+                document.getElementById(
+                    "name"
+                ).value;
+
+
+            const email =
+                document.getElementById(
+                    "email"
+                ).value;
+
+
+            const message =
+                document.getElementById(
+                    "message"
+                ).value;
+
+
+            /*
+            GANTI NOMOR WHATSAPP DI BAWAH
+            dengan nomor WhatsApp Anda.
+
+            Format:
+            628xxxxxxxxxx
+
+            Contoh:
+            6281234567890
+            */
+
+
+            const phone =
+                "6281234567890";
+
+
+            const text =
+                `Halo Pak Eric,%0A%0A` +
+                `Nama: ${name}%0A` +
+                `Email: ${email}%0A%0A` +
+                `Pesan:%0A${message}`;
+
+
+            window.open(
+                `https://wa.me/${phone}?text=${text}`,
+                "_blank"
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>
